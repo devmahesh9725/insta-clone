@@ -8,6 +8,7 @@ export const register = async (req, res) => {
     try {
         const { username, email, password } = req.body;
         if (!username || !email || !password) {
+            console.log("Must enter all the data bro")
             return res.status(401).json({
                 message: "Something is missing, please check!",
                 success: false,
@@ -32,12 +33,14 @@ export const register = async (req, res) => {
         });
     } catch (error) {
         console.log(error);
+        return res.status(500).json({message : "Error in registering the account please try again after some time"});
     }
 }
 export const login = async (req, res) => {
     try {
         const { email, password } = req.body;
         if (!email || !password) {
+            console.log("enter the email and password ")
             return res.status(401).json({
                 message: "Something is missing, please check!",
                 success: false,
@@ -51,6 +54,7 @@ export const login = async (req, res) => {
             });
         }
         const isPasswordMatch = await bcrypt.compare(password, user.password);
+        console.log(isPasswordMatch , "<------------IS MATCHED : ");
         if (!isPasswordMatch) {
             return res.status(401).json({
                 message: "Incorrect email or password",
