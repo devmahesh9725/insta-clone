@@ -117,7 +117,7 @@ export const likePost = async (req, res) => {
 
         return res.status(200).json({message:'Post liked', success:true});
     } catch (error) {
-
+        console.log("Error Found on Liking post" ,error);
     }
 }
 export const dislikePost = async (req, res) => {
