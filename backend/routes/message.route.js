@@ -9,6 +9,18 @@ router.route('/send/:id').post(isAuthenticated, sendMessage);
 router.route('/send/:id').post(isAuthenticated, sendMessage);
 router.route('/send/:id').post(isAuthenticated, sendMessage);
 router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
+router.route('/send/:id').post(isAuthenticated, sendMessage);
 router.route('/all/:id').get(isAuthenticated, getMessage);
  
 export default router;
