@@ -28,8 +28,11 @@ app.use(cors(corsOptions));
 
 // yha pr apni api ayengi
 app.use("/api/v1/user", userRoute);
+console.log("user route" ,"/api/v1/user");
 app.use("/api/v1/post", postRoute);
+console.log("post route" ,"/api/v1/post");
 app.use("/api/v1/message", messageRoute);
+console.log("message route" ,"/api/v1/message");
 
 
 app.use(express.static(path.join(__dirname, "/frontend/dist")));

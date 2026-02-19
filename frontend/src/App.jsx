@@ -55,6 +55,7 @@ function App() {
 
   useEffect(() => {
     if (user) {
+      console.log("user",user);
       const socketio = io('http://localhost:8000', {
         query: {
           userId: user?._id
@@ -77,6 +78,7 @@ function App() {
         dispatch(setSocket(null));
       }
     } else if (socket) {
+      console.log("socket",socket);
       socket.close();
       dispatch(setSocket(null));
     }

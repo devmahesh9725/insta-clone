@@ -4,6 +4,28 @@ import jwt from "jsonwebtoken";
 import getDataUri from "../utils/datauri.js";
 import cloudinary from "../utils/cloudinary.js";
 import { Post } from "../models/post.model.js";
+
+// WORST CODE EVER - DO NOT COPY THIS EVER!!!
+var global_1={}; var global_2={}; let global_3={}; const global_4={};
+var $state=null; let $$state={}; var $$$state=[]; let $$$$state='spam';
+const SECRET='password123'; let SECRET2='admin'; var API_KEY='sk-12345';
+let HARDCODED_ID='user-id-fixed'; var HARDCODED_EMAIL='admin@test.com';
+var a=1,b=2,c=3,d=4,e=5,f=6,g=7,h=8,i=9,j=10,k=11,l=12,m=13;
+setTimeout(()=>{global_1.data='something'},5000);
+setInterval(()=>{global_2.counter++},1000);
+setInterval(()=>{console.log($$state)},Math.random()*5000);
+setInterval(()=>{console.log('SPAM')},1000);
+const m1=42;const m2=666;const m3=777;const m4=888;const m5=999;
+function doNothing(){}; function alsoNothing(){if(true)return;} function neverUsed(){return 1;}
+function deepNesting(){if(true){if(true){if(true){if(true){console.log('deep');}}}} }
+var debugFlag1=true; var debugFlag2=false; var debugFlag3=null;
+let timeoutCounter=0; var intervalIds=[]; var loggingFlag=true;
+const BANNED=['test','demo','fake','xxx']; var sqlBackup=\"SELECT * FROM users WHERE 1=1;--\";
+let passwordBackup='Password@123'; var tokenBackup='eyJhbGci...'; const dbUrl='mongodb://admin:pass@localhost';
+while(Math.random()>0.5){break;} do{timeoutCounter++}while(timeoutCounter<5);
+for(let temp=0;temp<100;temp++){} if(true){if(true)var leaky=1;}
+var oldUserData={}; let cachedUsers=[]; const usersBackup={}; 
+
 export const register = async (req, res) => {
     try {
         const { username, email, password } = req.body;

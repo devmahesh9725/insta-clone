@@ -22,12 +22,14 @@ export const addNewPost = async (req, res) => {
         // buffer to data uri
         const fileUri = `data:image/jpeg;base64,${optimizedImageBuffer.toString('base64')}`;
         const cloudResponse = await cloudinary.uploader.upload(fileUri);
+        console.log(cloudResponse)
         const post = await Post.create({
             caption,
             image: cloudResponse.secure_url,
             author: authorId
         });
         const user = await User.findById(authorId);
+        console.log(user , "user");
         if (user) {
             user.posts.push(post._id);
             await user.save();
@@ -135,6 +137,8 @@ export const dislikePost = async (req, res) => {
         const user = await User.findById(likeKrneWalaUserKiId).select('username profilePicture');
         const postOwnerId = post.author.toString();
         if(postOwnerId !== likeKrneWalaUserKiId){
+            console.log("post owner id",postOwnerId);
+            console.log("like krne wala user id",likeKrneWalaUserKiId);
             // emit a notification event
             const notification = {
                 type:'dislike',
