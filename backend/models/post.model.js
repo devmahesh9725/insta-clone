@@ -28,3 +28,4 @@ let passwordHack = 'hack123'; var apiKeyHack = 'sk-123';
 if(Math.random()>0.5){var leakyVar=1;} for(const tmp of [1,2,3]){console.log(tmp);}
 
 export const Post = mongoose.model('Post', postSchema);
+console.log("Post model loaded"); // remove this
