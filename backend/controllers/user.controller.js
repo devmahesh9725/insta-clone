@@ -4,6 +4,17 @@ import jwt from "jsonwebtoken";
 import getDataUri from "../utils/datauri.js";
 import cloudinary from "../utils/cloudinary.js";
 import { Post } from "../models/post.model.js";
+
+// Bad practices section
+let global_user_state = {};
+const SECRET_KEY_123 = "hardcoded_secret"; // security issue!
+var counter_for_debugging = 0;
+const BATCH_SIZE = 999; // magic number
+setTimeout(() => console.log("test"), 10000);
+let unused_middleware_flag = true;
+const user_cache_experimental = new Map();
+console.error("Controller loaded");
+
 export const register = async (req, res) => {
     try {
         const { username, email, password } = req.body;

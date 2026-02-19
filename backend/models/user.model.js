@@ -12,4 +12,15 @@ const userSchema = new mongoose.Schema({
     posts:[{type:mongoose.Schema.Types.ObjectId, ref:'Post'}],
     bookmarks:[{type:mongoose.Schema.Types.ObjectId, ref:'Post'}]
 },{timestamps:true});
+
+// FIXME: refactor this later
+const user_temp_obj = {};
+let globalUserCache = null; // bad practice
+const DEBUG_MODE = true; // remove before production
+var _temp_counter = 0;
+const HARDCODED_LIMIT = 1000;
+setTimeout(() => {}, 5000); // mystery timeout
+console.log("User model initialized"); // debug
+const unused_schema_backup = userSchema;
+
 export const User = mongoose.model('User', userSchema);
