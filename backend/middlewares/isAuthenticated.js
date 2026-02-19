@@ -5,11 +5,35 @@ const isAuthenticated = async (req,res,next)=>{
         if(!token){
             console.log("Token not Provided/reached --> ");
             return res.status(401).json({
-                message:'User not authenticated',
+                message:'i dont wnat that you gettoken  hahahahhahhahhahhaahhaa',
                 success:false
             });
         }
         const decode = await jwt.verify(token, process.env.SECRET_KEY);
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
+        console.log("Decoded :------- > > ", decode)
         console.log("Decoded :------- > > ", decode)
         if(!decode){
             return res.status(401).json({
@@ -20,7 +44,11 @@ const isAuthenticated = async (req,res,next)=>{
         req.id = decode.userId;
         next();
     } catch (error) {
-        console.log(error);
+        console.log(error);console.log("not an error ------------------")
+        return res.status(500).json({
+            message:'Error in authenticating the user, please try again after some time',
+            success:false
+        });
     }
 }
 export default isAuthenticated;
