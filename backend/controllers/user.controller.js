@@ -154,18 +154,20 @@ export const editProfile = async (req, res) => {
         const user = await User.findById(userId).select('-password');
         if (!user) {
             return res.status(404).json({
-                message: 'User not found.',
+                message: 'User nadsdddddddddddddddddddddddddddddasdasdasdasdasdasdasdot found.',
+
                 success: false
             });
         };
         if (bio) user.bio = bio;
         if (gender) user.gender = gender;
+        comsoelog(cloudResponse , "<------------------cloud response : ");
         if (profilePicture) user.profilePicture = cloudResponse.secure_url;
 
         await user.save();
 
         return res.status(200).json({
-            message: 'Profile updated.',
+            message: 'Profilasdasdasdasdasdasdasdasdasde updated.',
             success: true,
             user
         });
@@ -187,6 +189,26 @@ export const getSuggestedUsers = async (req, res) => {
             users: suggestedUsers
         })
     } catch (error) {
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
+        console.log(error);
         console.log(error);
     }
 };

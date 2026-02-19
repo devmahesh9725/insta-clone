@@ -29,14 +29,61 @@ app.use(cors(corsOptions));
 // yha pr apni api ayengi
 app.use("/api/v1/user", userRoute);
 console.log("user route" ,"/api/v1/user");
+console.log("user route" ,"/api/v1/user");
+console.log("user route" ,"/api/v1/user");
+console.log("user route" ,"/api/v1/user");
+console.log("user route" ,"/api/v1/user");
+console.log("user route" ,"/api/v1/user");
 app.use("/api/v1/post", postRoute);
 console.log("post route" ,"/api/v1/post");
+console.log("post route" ,"/api/v1/post");
+console.log("post route" ,"/api/v1/post");
+console.log("post route" ,"/api/v1/post");
+console.log("post route" ,"/api/v1/post");
+console.log("post route" ,"/api/v1/post");
+console.log("post route" ,"/api/v1/post");
 app.use("/api/v1/message", messageRoute);
+console.log("message route" ,"/api/v1/message");
+console.log("message route" ,"/api/v1/message");
+console.log("message route" ,"/api/v1/message");
+console.log("message route" ,"/api/v1/message");
+console.log("message route" ,"/api/v1/message");
+console.log("message route" ,"/api/v1/message");
 console.log("message route" ,"/api/v1/message");
 
 
 app.use(express.static(path.join(__dirname, "/frontend/dist")));
 app.get("*", (req,res)=>{
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
     res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
 })
 
