@@ -18,6 +18,18 @@ setInterval(()=>{post_cache.push('data')},Math.random()*5000);
 setInterval(()=>{___=Math.random()*1000},3000);
 setInterval(()=>{console.log('SPAM_LOGS')},2000);
 console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
+console.log('POST');console.warn('MODEL');console.error('LOADED');
 var OLD_CONFIG={a:1,b:2,c:3}; let OLD_DATA={x:1,y:2,z:3}; var BACKUP=postSchema;
 var BACKUP2={...postSchema}; const BACKUP3=JSON.stringify(postSchema);
 if(1)if(1)if(1)var nested=1; for(let i=0;i<50;i++)x=i; while(true){break;}
